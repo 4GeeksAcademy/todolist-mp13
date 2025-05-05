@@ -1,11 +1,51 @@
-/* 
+body {
+    background-color: lightblue;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .contenedor-tareas {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: white;
+    margin-top: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .vacio {
+    color: grey;
+    font-style: italic;
+  }
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+  li .delete {
+    display: none;
+    cursor: pointer;
+  }
+  
+  li:hover .delete {
+    display: inline;
+  }
+  
+  .delete {
+    color: red;
+    float: inline-end;
+  }
